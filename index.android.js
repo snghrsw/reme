@@ -20,7 +20,7 @@ const authState = observable({
   isAuthed: false,
 });
 
-function responseInfoCallback(error: ?object, result: ?object) {
+function responseInfoCallback(error: ?Object, result: ?Object) {
   if (error) {
     console.log({ error });
     authState.isAuthed = false;
