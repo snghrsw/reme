@@ -1,4 +1,4 @@
-// @flow
+/* @flow */
 
 import React from 'react';
 import { AppRegistry, Text, View } from 'react-native';
@@ -20,7 +20,7 @@ const authState = observable({
   isAuthed: false,
 });
 
-function responseInfoCallback(error, result) {
+function responseInfoCallback(error: ?object, result: ?object) {
   if (error) {
     console.log({ error });
     authState.isAuthed = false;
