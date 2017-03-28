@@ -4,7 +4,7 @@ module.exports = {
     commonjs: true,
     es6: true,
   },
-  extends: ['eslint:recommended', 'airbnb'],
+  extends: ['eslint:recommended',  'flowtype/recommended', 'airbnb'],
   parserOptions: {
     ecmaFeatures: {
       ecmaVersion: 7,
@@ -13,7 +13,7 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  plugins: ['react'],
+  plugins: ['react', 'flowtype'],
   rules: {
     indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
