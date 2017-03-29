@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-export default function Home() {
+export default function Home(): React.Component {
   return (
     <View
       style={{

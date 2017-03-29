@@ -5,7 +5,7 @@ import { Actions } from 'react-native-router-flux'
 import authState from './../store/AuthState'
 
 function facebookAuthAction() {
-  LoginManager.logInWithReadPermissions(['public_profile']).then((result) => {
+  LoginManager.logInWithReadPermissions(['public_profile']).then((result: object) => {
     if (result.isCancelled) {
       console.log('Login was cancelled')
       authState.isAuthed = false
@@ -15,14 +15,14 @@ function facebookAuthAction() {
       authState.isAuthed = true
       Actions.home()
     }
-  }, (error) => {
+  }, (error: object) => {
     console.log(`Login failed with error: ${error}`)
     authState.isAuthed = false
     Actions.auth()
   })
 }
 
-export default function Auth() {
+export default function Auth(): React.Component {
   return (
     <View
       style={{
