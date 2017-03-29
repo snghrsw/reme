@@ -14,7 +14,7 @@ const scenes = Actions.create(
   </Scene>,
 )
 
-export default function App(): React.Component {
+export default function App() {
   return (
     <Router
       scenes={scenes}
