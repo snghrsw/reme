@@ -6,4 +6,4 @@ import { observer } from 'mobx-react/native'
 import App from './src/components/App'
 import './src/app'
 
-AppRegistry.registerComponent('reme', (): React.ComponentClass => observer(App))
+AppRegistry.registerComponent('reme', (): void => observer(App))
